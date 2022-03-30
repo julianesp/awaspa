@@ -13,6 +13,7 @@
 body {
     font-family: 'Lato';
     margin: 10px 0;
+    position: relative;
 }
 
 .header {
@@ -64,10 +65,28 @@ body {
 
 .footer {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: left;
     margin: 20px auto 0;
+    padding: 20px;
     border: 1px solid #baba;
     width: 80%;
-    height: 150px;
+    height: auto;
     border-radius: 20px;
     box-shadow: -5px 5px 20px #baba;
+}
+
+.footer .redes {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.footer .redes a img {
+    width: 50px;
+}
+
+.footer div h3 {
+    text-decoration-line: underline;
+    line-height: 3;
 }
