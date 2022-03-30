@@ -37,10 +37,9 @@ body {
 
 .header nav ul {
     display: grid;
-    /* grid-template-columns: repeat(5, 1fr); */
     grid-template-columns: repeat(5, 200px);
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     list-style: none;
 }
 
@@ -65,13 +64,30 @@ body {
 .container {
     display: grid;
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 7em;
     padding: 50px;
     border: 1px solid #baba;
     width: 80%;
-    height: 100vh;
+    height: auto;
     border-radius: 20px;
     box-shadow: -5px 5px 20px #baba;
+}
+
+.container .galeria {
+    width: inherit;
+}
+
+.container .galeria .img {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    overflow-x: scroll;
+    border: 1px solid #000;
+    margin-bottom: 50px;
+}
+
+.container .galeria .img img {
+    width: 200px;
 }
 
 .container .mision {
