@@ -30,17 +30,21 @@ body {
     border: 1px solid #baba;
     background-color: #ffffff;
     width: 100%;
-    height: 90px;
-    /* border-radius: 20px; */
+    height: 50px;
     box-shadow: -5px 5px 20px #baba;
+}
+
+.header nav {
+    height: inherit;
 }
 
 .header nav ul {
     display: grid;
     grid-template-columns: repeat(5, 200px);
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     list-style: none;
+    height: inherit;
 }
 
 .header nav ul li img {
@@ -58,13 +62,12 @@ body {
 
 .header nav ul li button:hover {
     text-decoration-line: underline;
-    line-height: 50px;
 }
 
 .container {
     display: grid;
     margin: 0 auto;
-    margin-top: 7em;
+    margin-top: 5em;
     padding: 50px;
     border: 1px solid #baba;
     width: 80%;
@@ -74,20 +77,29 @@ body {
 }
 
 .container .galeria {
-    width: inherit;
+    /* width: inherit; */
 }
 
 .container .galeria .img {
     display: flex;
-    justify-content: center;
-    height: 400px;
+    height: 500px;
+    width: 900px;
     overflow-x: scroll;
-    border: 1px solid #000;
+    overflow-y: hidden;
+    margin: 0 auto;
     margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 0 50px;
 }
 
 .container .galeria .img img {
-    width: 200px;
+    width: 400px;
+    height: inherit;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 20px;
+    border: 2px solid #baba;
 }
 
 .container .mision {
@@ -133,7 +145,7 @@ body {
 
 .footer .redes {
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 50px;
 }
 
