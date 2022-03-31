@@ -161,3 +161,75 @@ body {
     text-decoration-line: underline;
     line-height: 3;
 }
+
+
+/* estilos documentacion */
+
+.container .documentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .documentacion .title {
+    margin-bottom: 30px;
+}
+
+.container .documentacion .documents {
+    width: 100%;
+}
+
+.container .documentacion .documents ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .documentacion .documents ul li {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    margin: 20px;
+}
+
+.container .documentacion .documents ul li div {
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    align-items: center;
+    justify-items: center;
+    gap: 20px 0;
+    margin-right: 10px;
+    text-align: center;
+    width: 200px;
+    border-radius: 0 20px 0 0;
+    border: 1px solid #000;
+    border-left: 0;
+    border-bottom: 0;
+    box-shadow: 10px 10px 10px #baba;
+}
+
+.container .documentacion .documents ul li div h4 {
+    font-size: .9rem;
+}
+
+.container .documentacion .documents ul li div img {
+    width: 100px;
+}
+
+.container .documentacion .documents ul li div button {
+    cursor: pointer;
+    width: calc(100% - 20px);
+    height: 40px;
+    transition: .2s ease-out;
+}
+
+.container .documentacion .documents ul li div button:hover {
+    transition: .2s ease-out;
+    transform: scale(.9);
+}
+
+.header nav ul li img {
+    cursor: pointer;
+}
